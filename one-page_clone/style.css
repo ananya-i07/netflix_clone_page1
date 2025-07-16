@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/7d6918fc-cfb7-46cb-872f-d3c0049c1dbf/f53e94b3-fd91-44d9-8b6d-179ea0bb8cce/IN-en-20230731-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  width: 140px;
+}
+
+.signin-btn {
+  background-color: #e50914;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 30%;
+  transform: translateY(-30%);
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.email-signup {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.email-signup input {
+  padding: 12px;
+  width: 300px;
+  max-width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.email-signup button {
+  padding: 12px 24px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    padding: 15px 30px;
+  }
+}
+
+
+
